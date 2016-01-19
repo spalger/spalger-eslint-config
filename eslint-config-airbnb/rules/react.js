@@ -1,6 +1,6 @@
 module.exports = {
   'plugins': [
-    'react'
+    'eslint-plugin-react'
   ],
   'ecmaFeatures': {
     'jsx': true
