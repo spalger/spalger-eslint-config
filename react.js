@@ -1,1 +1,9 @@
-module.exports = require('./_extend')(require('./eslint-config-airbnb/index'));
+module.exports = {
+  parser: 'babel-eslint',
+  extends: [
+    require.resolve('eslint-config-airbnb/index'),
+  ],
+  rules: {
+    semi: [2, 'never']
+  }
+}
