@@ -5,7 +5,7 @@ Simply a set of modification to the fantastic [airbnb style](https://github.com/
 ## Install
 
 ```bash
-npm install --save-dev babel-eslint @spalger/eslint-config-personal
+npm install --save-dev @spalger/eslint-config-personal eslint babel-eslint eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-react
 ```
 
 ## Usage
