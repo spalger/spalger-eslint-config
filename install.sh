@@ -1,5 +1,12 @@
 #!/usr/bin/env sh
 
+set -e;
+
+if [ ! -f package.json ]; then
+  echo "no package.json file found, are you at the root of your project?";
+  exit 1;
+fi
+
 npm install --save-dev \
   eslint@latest \
   babel-eslint@latest \
@@ -12,5 +19,7 @@ npm install --save-dev \
   ;
 
 if [ ! -f '.eslintrc.yaml' ]; then
-  cp node_modules/@spalger/eslint-config-personal/example/.eslintrc.yaml .
+  cp ./node_modules/@spalger/eslint-config-personal/example/.eslintrc.yaml .;
 fi
+
+echo "done!";
