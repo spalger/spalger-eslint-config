@@ -7,7 +7,8 @@
   "peerDependencies": {
     "babel-eslint": "*",
     "eslint-plugin-react": "*",
-    "eslint-config-airbnb": "*"
+    "eslint-config-airbnb": "*",
+    "eslint-plugin-import": "https://github.com/spalger/eslint-plugin-import/releases/download/with-rule-no-reaching-in-2/eslint-plugin-import-1.13.0.tgz"
   },
   "devDependencies": {
     "eslint": "^2.4.0"

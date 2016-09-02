@@ -1,20 +1,20 @@
 # Personal, Shareable, ESLint Config
 
-Simply a set of modification to the fantastic [airbnb style](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb).
+Simply a set of customizations to the fantastic [airbnb style](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb).
 
 ## Install
 
 ```bash
-npm install --save-dev @spalger/eslint-config-personal eslint babel-eslint eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-react
+# because peer dependencies
+curl -o- https://raw.githubusercontent.com/spalger/spalger-eslint-config/master/install.sh | bash
 ```
 
 ## Usage
 
-Use this as your .eslintrc file. the babel-eslint parser is required
+Update your `.eslintrc.yaml` file to point to this config
 
 ```
-{
-  "parser": "babel-eslint",
-  "extends": "@spalger/personal/es6"
-}
+---
+extends:
+  - "@spalger/personal/es6"
 ```
