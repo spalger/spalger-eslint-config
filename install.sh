@@ -8,4 +8,9 @@ npm install --save-dev \
   eslint-plugin-import@latest \
   eslint-plugin-react@latest \
   @spalger/eslint-config-personal@latest \
-  https://github.com/spalger/eslint-plugin-import/releases/download/with-rule-no-reaching-in-2/eslint-plugin-import-1.13.0.tgz
+  https://github.com/spalger/eslint-plugin-import/releases/download/with-rule-no-reaching-in-2/eslint-plugin-import-1.13.0.tgz \
+  ;
+
+if [ ! -f '.eslintrc.yaml' ]; then
+  cp node_modules/@spalger/eslint-config-personal/example/.eslintrc.yaml .
+fi
