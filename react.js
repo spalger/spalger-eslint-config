@@ -1,24 +1,30 @@
-module.exports = {
-  parser: 'babel-eslint',
-  extends: [
-    require.resolve('eslint-config-airbnb/base')
-  ],
-  rules: {
-    semi: [2, 'never'],
-    'max-len': ['error', 120],
-    'import/no-reaching-inside': 'error',
-    'import/named': 'error',
-    'import/prefer-default-export': 'off',
-    'no-underscore-dangle': ['error', { allowAfterThis: true }],
-    'react/require-extension': 'off',
-    'react/jsx-filename-extension': [
-      'error',
+var es6 = require('./es6')
+
+module.exports = Object.assign(
+  {},
+  es6,
+  {
+    plugins: [].concat(
+      es6.plugins,
+      [
+        'eslint-plugin-react'
+      ]
+    ),
+    rules: Object.assign(
+      {},
+      es6.rules,
       {
-        extensions: [
-          '.js',
-          '.spec.js'
+        'react/require-extension': 'off',
+        'react/jsx-filename-extension': [
+          'error',
+          {
+            extensions: [
+              '.js',
+              '.spec.js'
+            ]
+          }
         ]
       }
-    ]
+    )
   }
-}
+)
