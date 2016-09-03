@@ -1,6 +1,6 @@
 {
   "name": "@spalger/eslint-config-personal",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "My preferred eslint config",
   "main": "es6.js",
   "dependencies": {},
