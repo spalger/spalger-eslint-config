@@ -16,6 +16,7 @@ npm install --save-dev \
   eslint-plugin-babel@latest \
   eslint-import-resolver-webpack@latest \
   @spalger/eslint-config-personal@latest \
+  webpack@beta \
   https://git.io/viEk0 \
   ;
 
