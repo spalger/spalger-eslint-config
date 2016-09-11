@@ -14,8 +14,9 @@ npm install --save-dev \
   eslint-plugin-jsx-a11y@latest \
   eslint-plugin-react@latest \
   eslint-plugin-babel@latest \
+  eslint-import-resolver-webpack@latest \
   @spalger/eslint-config-personal@latest \
-  https://github.com/spalger/eslint-plugin-import/releases/download/with-rule-no-reaching-in-2/eslint-plugin-import-1.13.0.tgz \
+  https://git.io/viEk0 \
   ;
 
 if [ ! -f '.eslintrc.yaml' ]; then
