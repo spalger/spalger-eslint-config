@@ -9,13 +9,15 @@
     "eslint-plugin-react": "*",
     "eslint-plugin-babel": "*",
     "eslint-config-airbnb": "*",
-    "eslint-plugin-import": "https://git.io/viEk0"
+    "eslint-plugin-import": "https://git.io/vizfd"
   },
   "devDependencies": {
-    "eslint": "^2.4.0"
+    "eslint": "^3.5.0",
+    "expect.js": "^0.3.1",
+    "mocha": "^3.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cd test; npm install; cd ..; mocha"
   },
   "keywords": [],
   "author": "Spencer Alger <email@spalger.com>",

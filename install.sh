@@ -17,7 +17,7 @@ npm install --save-dev \
   eslint-import-resolver-webpack@latest \
   @spalger/eslint-config-personal@latest \
   webpack@beta \
-  https://git.io/viEk0 \
+  https://git.io/vizfd \
   ;
 
 if [ ! -f '.eslintrc.yaml' ]; then
