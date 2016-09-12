@@ -1,7 +1,7 @@
 var expect = require('expect.js')
 
 var getConfig = require('./helpers').getConfig
-var es6Tests = require('./es6')
+var baseTests = require('./base')
 
 module.exports = function (fixture){
   describe('React rules', function () {
@@ -13,6 +13,6 @@ module.exports = function (fixture){
       expect(rule[0]).to.be('error')
     })
 
-    es6Tests(fixture)
+    baseTests(fixture)
   })
 }
