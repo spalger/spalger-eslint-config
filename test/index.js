@@ -1,4 +1,4 @@
-var fixturePath = require('./helpers').fixturePath
+const { fixturePath } = require('./helpers')
 
 // tests
 require('./base')(fixturePath('es6/index.js'))

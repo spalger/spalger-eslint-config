@@ -1,17 +1,17 @@
-var expect = require('expect.js')
+const expect = require('expect.js')
 
-var getConfig = require('./helpers').getConfig
+const { getConfig } = require('./helpers')
 
-module.exports = function (fixture) {
-  describe('Base rules', function () {
-    it('includes base rules', function () {
-      var config = getConfig(fixture)
+module.exports = fixture => {
+  describe('Base rules', () => {
+    it('includes base rules', () => {
+      const config = getConfig(fixture)
       expect(config.rules).to.have.property('max-len')
       expect(config.rules['max-len']).to.have.eql([ 'error', 120 ])
     })
 
-    it('includes babel overrides', function () {
-      var config = getConfig(fixture)
+    it('includes babel overrides', () => {
+      const config = getConfig(fixture)
 
       expect(config.rules).to.have.property('generator-star-spacing')
       expect(config.rules['generator-star-spacing'][0]).to.be('off')

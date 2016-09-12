@@ -1,5 +1,4 @@
-var resolve = require('path').resolve
+const { resolve } = require('path')
 
-module.exports = function(name) {
-  return resolve(__dirname, '../../fixtures', name)
-}
+module.exports = name =>
+  resolve(__dirname, '../../fixtures', name)

@@ -1,14 +1,14 @@
-var expect = require('expect.js')
+const expect = require('expect.js')
 
-var getConfig = require('./helpers').getConfig
-var baseTests = require('./base')
+const { getConfig } = require('./helpers')
+const baseTests = require('./base')
 
-module.exports = function (fixture){
-  describe('React rules', function () {
-    it('includes filename extension rule', function () {
-      var config = getConfig(fixture)
+module.exports = fixture => {
+  describe('React rules', () => {
+    it('includes filename extension rule', () => {
+      const config = getConfig(fixture)
       expect(config.rules).to.have.property('react/jsx-filename-extension')
-      var rule = config.rules['react/jsx-filename-extension']
+      const rule = config.rules['react/jsx-filename-extension']
       expect(rule).to.be.an('array')
       expect(rule[0]).to.be('error')
     })

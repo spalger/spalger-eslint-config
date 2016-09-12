@@ -1,6 +1,6 @@
-var CLIEngine = require('eslint').CLIEngine
+const CLIEngine = require('eslint').CLIEngine
 
-module.exports = function getConfig(fixture) {
-  var cli = new CLIEngine()
+module.exports = fixture => {
+  const cli = new CLIEngine()
   return cli.getConfigForFile(fixture)
 }

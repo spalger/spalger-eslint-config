@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/spalger/spalger-eslint-config/issues"
   },
-  "homepage": "https://github.com/spalger/spalger-eslint-config#readme"
+  "homepage": "https://github.com/spalger/spalger-eslint-config#readme",
+  "engines": {
+    "node": ">=6"
+  }
 }
