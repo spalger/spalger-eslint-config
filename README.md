@@ -6,7 +6,7 @@ Simply a set of customizations to the fantastic [airbnb style](https://github.co
 
 ```bash
 # because peer dependencies
-curl -o- https://raw.githubusercontent.com/spalger/spalger-eslint-config/v0.6.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/spalger/spalger-eslint-config/v0.6.1/install.sh | bash
 ```
 
 ## Usage
