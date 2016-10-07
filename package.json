@@ -9,7 +9,7 @@
     "eslint-plugin-react": "*",
     "eslint-plugin-babel": "*",
     "eslint-config-airbnb": "*",
-    "eslint-plugin-import": "https://git.io/vizfd"
+    "eslint-plugin-import": "*"
   },
   "devDependencies": {
     "eslint": "^3.5.0",
